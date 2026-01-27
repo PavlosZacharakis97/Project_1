@@ -1,0 +1,13 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button-hover {
+  &:hover {
+    background-color: #ffffff;
+    color: #0b0d17;
+    border-radius: 4px;
+  }
+}
