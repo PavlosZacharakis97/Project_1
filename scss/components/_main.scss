@@ -5,7 +5,7 @@
 .Main_conteiner {
     width: 100%;
     margin: 100px auto;
-    padding: 0 80px;
+    // padding: 0 80px;
 }
 
 .Section1 {
@@ -21,6 +21,7 @@
     font-family: $main_font;
     font-size: 16px;
     letter-spacing: 2px;
+    padding: 0 80px;
 }
 
 .Line {
@@ -29,6 +30,7 @@
     width: 80px;
     height: 2px;
     background-color: black;
+    padding: 0 80px;
 }
 
 
@@ -74,8 +76,10 @@ h2 {
     display: flex;
     align-items: center;
     margin-top: 160px;
+    letter-spacing: 2px;
+    padding: 0 80px;
     .Line2 {
-        width: 85%;
+        width: 83%;
         height: 1px;
         background-color: grey;
         margin-left: 50px;
@@ -87,4 +91,89 @@ h2 {
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
+    padding: 0 80px;
+}
+
+iframe {
+     position: absolute;
+    top: 898px;
+    left: 900px;
+    width: 480px;
+    height: 508px;
+    border-radius: 12px;
+}
+
+.Section2 {
+    background-color: #EFF7F2;
+    margin-top: 80px;
+}
+
+.Section_title2 {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-family: $main_font;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 0 80px;
+}
+
+.Text_line2 {
+    width: 608px;
+    height: 50px;
+    margin: 30px 170px;
+}
+
+.Functions_list {
+  position: relative;
+  padding-left: 60px;
+  margin-left: 150px;
+}
+
+/* Общая вертикальная линия */
+.Functions_list::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #e6e6e6;
+}
+
+.Function_item {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* Иконка */
+.Function_icon {
+  width: 48px;
+  height: 48px;
+  background: #7ad3a6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.Function_icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Текст */
+.Function_content h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Function_content p {
+  margin-top: 8px;
+  color: #525560;
+  line-height: 1.6;
+  max-width: 420px;
 }
