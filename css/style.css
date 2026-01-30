@@ -202,6 +202,7 @@ body {
 .Main_conteiner {
   width: 100%;
   margin: 100px auto;
+  font-family: "Roboto", sans-serif;
 }
 
 .Section1 {
@@ -330,7 +331,7 @@ body {
 }
 .Button:hover {
   cursor: pointer;
-  background-color: #70C174;
+  background-color: #70c174;
   color: white;
   border-radius: 5px;
   -webkit-transition: 0.1s cubic-bezier(0.13, 0, 0.39, 0);
@@ -381,9 +382,47 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #EFF7F2;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 80px;
+  background-color: #eff7f2;
   padding: 80px;
-  width: 100%;
+}
+.Section2_Left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+}
+.Section2_Right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 770px;
+  padding: 20px 0;
+}
+.Section2_Right img {
+  max-width: 100%;
+}
+
+.List2_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 32px 0 0 97px;
 }
 
 .Section_title2 {
@@ -409,19 +448,18 @@ iframe {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 60px;
-  margin-left: 150px;
+  margin-left: 90px;
+  position: relative;
 }
 
 .Functions_list::before {
-  position: absolute;
-  visibility: visible;
-  opacity: 1;
   content: "";
+  position: absolute;
   left: 24px;
   top: 0;
-  height: 100%;
+  height: 90%;
   width: 2px;
-  background: #201f1f;
+  background: #898989;
 }
 
 .Function_item {
@@ -472,4 +510,99 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.Section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px;
+}
+
+.Section3_Down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0;
+  gap: 24px;
+  margin-top: 40px;
+}
+.Section3_Down .Grid_block {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-columns: 321px;
+  grid-template-rows: 330px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 80px 48px 48px 58px;
+}
+.Section3_Down .Grid_block .Grid_text {
+  width: 315px;
+  height: 293px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #eff7f2;
+}
+.Section3_Down .Grid_block .Grid_text .H3_text {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 150%;
+}
+
+.bg1 {
+  background-image: url(../../Image/GridImg1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  background-image: url(../../Image/Gridmg2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg3 {
+  background-image: url(../../Image/GridImg3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Grid_block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.Grid_text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
 }
