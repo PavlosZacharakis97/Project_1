@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -71,12 +70,10 @@ body {
 
 .Header_nav a:hover {
   overflow: visible;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   background-color: #0b0d17;
   color: white;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .Header_preview {
@@ -211,6 +208,51 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 96px 110px;
+}
+.Section1_UP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Section1_Down {
+  margin-top: 64px;
+}
+
+.UP_Left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.List_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 32px 0 0 97px;
+}
+
+.List_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -227,7 +269,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
-  padding: 0 80px;
 }
 
 .Line {
@@ -240,13 +281,11 @@ body {
   width: 80px;
   height: 2px;
   background-color: black;
-  padding: 0 80px;
 }
 
-h2 {
-  width: 607px;
+.H2_text {
+  max-width: 607px;
   height: 116px;
-  margin: 30px 170px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
@@ -254,7 +293,7 @@ h2 {
   line-height: 120%;
 }
 
-.Text_line1 {
+.Text_line2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,11 +301,13 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 500px;
+  max-width: 500px;
   height: 156px;
-  margin: 35px 175px;
   font-size: 16px;
 }
 
@@ -282,10 +323,10 @@ h2 {
           justify-content: center;
   width: 146px;
   height: 51px;
-  margin: 35px 175px;
   font-size: 20px;
   border-radius: 5px;
   border: 1px solid grey;
+  margin-top: 40px;
 }
 .Button:hover {
   cursor: pointer;
@@ -305,12 +346,13 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 160px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   letter-spacing: 2px;
-  padding: 0 80px;
 }
 .Supporter .Line2 {
-  width: 83%;
+  width: 80%;
   height: 1px;
   background-color: grey;
   margin-left: 50px;
@@ -327,21 +369,21 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 30px;
-  padding: 0 80px;
 }
 
 iframe {
-  position: absolute;
-  top: 898px;
-  left: 900px;
   width: 480px;
   height: 508px;
   border-radius: 12px;
 }
 
 .Section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #EFF7F2;
-  margin-top: 80px;
+  padding: 80px;
+  width: 100%;
 }
 
 .Section_title2 {
@@ -351,34 +393,35 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 47%;
   gap: 60px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
-  padding: 0 80px;
-}
-
-.Text_line2 {
-  width: 608px;
-  height: 50px;
-  margin: 30px 170px;
 }
 
 .Functions_list {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 60px;
   margin-left: 150px;
 }
 
-/* Общая вертикальная линия */
 .Functions_list::before {
-  content: "";
   position: absolute;
+  visibility: visible;
+  opacity: 1;
+  content: "";
   left: 24px;
   top: 0;
   height: 100%;
   width: 2px;
-  background: #e6e6e6;
+  background: #201f1f;
 }
 
 .Function_item {
@@ -389,7 +432,6 @@ iframe {
   margin-bottom: 48px;
 }
 
-/* Иконка */
 .Function_icon {
   width: 48px;
   height: 48px;
@@ -413,7 +455,6 @@ iframe {
   height: 24px;
 }
 
-/* Текст */
 .Function_content h4 {
   margin: 0;
   font-size: 20px;
@@ -425,4 +466,10 @@ iframe {
   color: #525560;
   line-height: 1.6;
   max-width: 420px;
+}
+
+.Section2_Img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
