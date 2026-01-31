@@ -241,7 +241,6 @@ iframe {
     align-items: center;
     grid-template-columns: 321px;
     grid-template-rows: 330px;
-    border: 1px solid black;
     border-radius: 12px;
     padding: 80px 48px 48px 58px;
     .Grid_text {
@@ -283,18 +282,16 @@ iframe {
   background-repeat: no-repeat;
 }
 
-
 .Grid_block::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
 }
 
 .Grid_text {
-    position: relative;
-    z-index: 2;
-    color: #fff;
+  position: relative;
+  z-index: 2;
+  color: #fff;
 }
-

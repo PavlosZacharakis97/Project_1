@@ -2,82 +2,54 @@
 @use "../base/roots" as *;
 @use "../base/mixins" as *;
 
-.Main_Header {
+header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   background-color: #ffffff;
-  z-index: 1000;
-}
-
-.Head {
-  background-color: #ffffff;
-}
-
-.Header_First {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 40px;
   @include flex-center;
   justify-content: space-between;
-}
-
-.Logo img {
-  height: 30px;
-  display: flex;
+  z-index: 1000;
+  padding: 20px 40px;
 }
 
 .Header_nav {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   gap: 8px;
 }
 
-.Header_nav a {
+.nav_item {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   color: #0b0d17;
-  transition: 0.2s ease-in;
-padding: 12px 24px;
+  padding: 12px 24px;
 }
 
-.Header_nav a:hover {
-  overflow: visible;
-  // transform: scale(1.1);
+.nav_item:hover {
+  transform: scale(1.15);
+  transition: 0.2s ease-in;
   background-color: #0b0d17;
   color: $font_color_white;
   border-radius: 8px;
-  font-weight: 500;
 }
 
 .Header_preview {
-  position: relative;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 120px 80px 60px 80px;
   height: 735px;
   background-image: url("../Image/BG Image.PNG");
   background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.Header_preview::hover {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  transition: cubic-bezier(0.13, 0, 0.39, 0);
 }
 
 .H1_preview {
-  position: relative;
-  z-index: 1;
-  margin-left: 110px;
-  margin-top: 195px;
   max-width: 640px;
   color: white;
 }
 
-.H1_preview p {
+.prewie_text {
   font-size: 64px;
   font-family: $main_font;
   font-weight: 700;
@@ -98,26 +70,15 @@ padding: 12px 24px;
   height: 51px;
   color: $font_color_white;
   font-size: 16px;
-@include flex-center;
-  cursor: pointer;
-  &:hover {
-  @include button-hover;
-  }
-}
-
-.Preview_button2 {
-@include flex-center;
-  width: 160px;
-  height: 51px;
   gap: 5px;
-  font-size: 16px;
+  @include flex-center;
   cursor: pointer;
   &:hover {
-@include button-hover;
+    @include button-hover;
   }
 }
 
-.Preview_button2 img {
+.Button_Icon {
   width: 48px;
   height: 48px;
   background-color: $font_color_white;
@@ -129,15 +90,17 @@ padding: 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 120px;
   color: $font_color_white;
-  margin-top: 150px;
   font-family: $main_font;
 }
 
-.Header_Line hr {
+#prewie_line {
   flex-grow: 0.9;
   height: 2px;
   background-color: white;
   border: none;
+}
+
+#content {
+  margin-top: 82.5px;
 }
