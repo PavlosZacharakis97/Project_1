@@ -47,7 +47,6 @@
   font-family: $main_font;
   font-size: 16px;
   letter-spacing: 2px;
-  // padding: 0 80px;
 }
 
 .Line {
@@ -56,13 +55,11 @@
   width: 80px;
   height: 2px;
   background-color: black;
-  // padding: 0 80px;
 }
 
 .H2_text {
   max-width: 607px;
   height: 116px;
-  // margin-bottom: 40px;
   flex-wrap: wrap;
   font-family: $main_font;
   font-size: 48px;
@@ -375,4 +372,113 @@ iframe {
 
 .Section4_Right {
   padding: 64px;
+}
+
+.Section5 {
+  padding: 0 80px 80px;
+}
+
+.Section5_items::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.346);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.Section5_items {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1280px;
+  height: 384px;
+  background-image: url(../../Image/Vetrovievishki.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 80px;
+  border-radius: 12px;
+}
+
+.Section5_text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  width: 631px;
+  height: 113px;
+  font-weight: 700;
+  text-align: center;
+  font-size: $HeadFont48px;
+  font-family: $main_font;
+  color: #eff7f2;
+}
+
+.Section5_buttons {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+.Section5Left_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 51px;
+  background-color: #eff7f2;
+  border-radius: 10px;
+  &:hover {
+    background-color: #70c174;
+    color: #eff7f2;
+    border-radius: 7px;
+    font-family: $main_font;
+    transition: 0.1s cubic-bezier(0.13, 0, 0.39, 0);
+    transform: scale(1.2);
+  }
+}
+
+.Left_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 200px;
+  height: 51px;
+  color: black;
+  font-family: $main_font;
+}
+
+.Section5Right_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 51px;
+  background-color: #eff7f2;
+  border-radius: 10px;
+  &:hover {
+    background-color: #70c174;
+    color: #eff7f2;
+    border-radius: 7px;
+    font-family: $main_font;
+    transition: 0.1s cubic-bezier(0.13, 0, 0.39, 0);
+    transform: scale(1.2);
+  }
+}
+
+.Right_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 116px;
+  height: 51px;
+  color: black;
+  font-family: $main_font;
 }
