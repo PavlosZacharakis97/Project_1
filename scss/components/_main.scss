@@ -295,3 +295,84 @@ iframe {
   z-index: 2;
   color: #fff;
 }
+
+.Section4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 567px;
+  background-color: black;
+  &_Left {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 80px;
+  }
+}
+
+.Section4_text {
+  width: 611px;
+  height: 285px;
+  color: #eff7f2;
+}
+
+.Section4_H2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.Section4_Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 204px);
+  gap: 16px 32px;
+}
+
+.Grid4_items {
+  display: grid;
+  grid-template-columns: 16px auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.Grid4_text {
+  font-size: 14px;
+  color: #fff;
+}
+
+.colorOrange {
+  width: 16px;
+  height: 16px;
+  background: #f9cf64;
+  border-radius: 3px;
+}
+
+.colorPurple {
+  width: 16px;
+  height: 16px;
+  background: #ac94f1;
+  border-radius: 3px;
+}
+
+.colorYellow {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: #fff0ca;
+}
+.colorGreen {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: #bef3c0;
+}
+.colorPink {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: #f38fbf;
+}
+
+.Section4_Right {
+  padding: 64px;
+}
