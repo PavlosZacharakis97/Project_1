@@ -822,3 +822,91 @@ iframe {
   color: black;
   font-family: "Roboto", sans-serif;
 }
+
+.Section6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 532px;
+  padding: 0 80px 80px;
+}
+
+.Section6_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.Section6_prewie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+}
+
+.Prewie_Line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 881px;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.546);
+}
+
+.Section6_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.List1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 302px;
+  height: 328px;
+}
+
+.List_prewie {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.List_text {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}

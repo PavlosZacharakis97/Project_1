@@ -482,3 +482,61 @@ iframe {
   color: black;
   font-family: $main_font;
 }
+
+.Section6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 532px;
+  padding: 0 80px 80px;
+}
+
+.Section6_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.Section6_prewie {
+  display: flex;
+  font-weight: 500;
+  font-size: $HeadFont48px;
+  font-family: $main_font;
+}
+
+.Prewie_Line {
+  display: flex;
+  width: 881px;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.546);
+}
+
+.Section6_list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.List1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 302px;
+  height: 328px;
+}
+
+.List_prewie {
+  font-weight: 500;
+  font-family: $main_font;
+  font-size: 20px;
+}
+
+.List_text {
+  font-weight: 400;
+  font-family: $main_font;
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
