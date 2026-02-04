@@ -642,3 +642,91 @@ iframe {
     }
   }
 }
+
+.Main_footer {
+  display: flex;
+  background-color: black;
+  color: #f0f0f0;
+  width: 100%;
+  height: 452px;
+  padding: 80px;
+  gap: 80px;
+  margin-top: 100px;
+
+  .Middle_footer {
+    display: grid;
+    grid-template-columns: repeat(3, 162px);
+    grid-template-rows: repeat(5, 55px);
+    .Footer_grigText {
+      text-decoration: none;
+      color: #f0f0f0;
+      font-weight: 200;
+      font-size: 18px;
+      font-family: $main_font;
+      &:hover {
+        font-size: 20px;
+        font-weight: 500;
+        transition: 0.1s cubic-bezier(0.13, 0, 0.39, 0);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.Right_footer {
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    gap: 20px;
+
+    .Right_footerText {
+        font-family: $main_font;
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.Email_form {
+    display: flex;
+    align-items: center;
+}
+
+.Email_row {
+    width: 365px;
+    height: 64px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 20px 0 20px 20px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+
+
+    &::placeholder {
+        color: #666;
+    }
+}
+
+.Submit_Button {
+    width: 140px;
+    height: 64px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    &:hover {
+        transform: scale(1.2);
+        background-color: #7ad3a6;
+        border-radius: 8px;
+    }
+    &:active {
+        transform: scale(0.98);
+    }
+}
