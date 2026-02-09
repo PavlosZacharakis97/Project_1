@@ -104,3 +104,59 @@ header {
 #content {
   margin-top: 82.5px;
 }
+
+
+
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+
+  .icon-close {
+    display: none;
+  }
+}
+
+@media (max-width: 846px) {
+  .hamburger {
+    display: block;
+  }
+
+
+  .menu-toggle:checked ~ .hamburger {
+    .icon-menu { display: none; }
+    .icon-close { display: block; } 
+  }
+
+  .Header_nav {
+    display: none; 
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #fff;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    
+    .nav_item {
+      color: #525560;
+      text-align: right;
+      padding: 10px;
+      
+      &:first-child {
+        font-weight: bold;
+        color: #1D2130;
+      }
+    }
+  }
+
+  .menu-toggle:checked ~ .Header_nav {
+    display: flex;
+  }
+}

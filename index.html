@@ -14,6 +14,18 @@
         <header class="Main_Header">
             <img src="Image/Logo.png" alt=""/>
 
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+        <label for="menu-toggle" class="hamburger">
+            <svg class="icon-menu" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H15M3 6H21M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <svg class="icon-close" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </label>
+
+
             <div class="Header_nav">
                 <a class="nav_item" href="#">Home</a>
                 <a class="nav_item" href="#">About us</a>
@@ -39,7 +51,6 @@
                             <img class="Button_Icon" src="Image/play.png" alt="Play">
                             <span>Play Video</span>
                         </div>
-
                     </div>
                 </div>
                 <div class="Header_Line">
@@ -47,10 +58,9 @@
                     <hr id="prewie_line">
                     <div>5840 donations collected</div>
                 </div>
-            
             </div>
 
-            <!-- <grid style="width: 100px; height: 100px; background-color: red;">asd</grid> -->
+
 
             <main class="Main_conteiner">
                 <section class="Section1">
@@ -85,12 +95,12 @@
                     <div class="Line2"></div>
                 </div>
                 <div class="Supporter_img">
-                    <img src="Image/Logo1.png" alt="">
-                    <img src="Image/Logo2.png" alt="">
-                    <img src="Image/Logo3.png" alt="">
-                    <img src="Image/Logo4.png" alt="">
-                    <img src="Image/Logo5.png" alt="">
-                    <img src="Image/Logo2.png" alt="">
+                    <img class="SupImg"  src="Image/Logo1.png" alt="">
+                    <img class="SupImg"  src="Image/Logo2.png" alt="">
+                    <img class="SupImg"  src="Image/Logo3.png" alt="">
+                    <img class="SupImg"  src="Image/Logo4.png" alt="">
+                    <img class="SupImg"  src="Image/Logo5.png" alt="">
+                    <img class="SupImg"  src="Image/Logo2.png" alt="">
                 </div>
             </section>
 
@@ -220,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="Section4_Right">
+                    <div>
                         <img src="Image/Chart.png" alt="">
                     </div>
                 </div>
@@ -350,7 +360,9 @@
                         <div class="Email">
                         <form class="Form" action="" method="post">
                             <input class="Email_row" type="email" name="email" placeholder="Your Email">
-                            <input class="Submit_Button" type="submit">
+                            <button class="Submit_Button">
+                                <div class="loader"></div>
+                            </button>
                         </form>
                         </div>
                     </div>

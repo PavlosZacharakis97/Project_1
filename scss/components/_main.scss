@@ -24,9 +24,14 @@
 }
 
 .UP_Left {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
+}
+
+.UP_Right {
+  width: 45%;
+  @include flex-center;
 }
 
 .List_content {
@@ -58,8 +63,7 @@
 }
 
 .H2_text {
-  max-width: 607px;
-  height: 116px;
+  // max-width: 607px;
   flex-wrap: wrap;
   font-family: $main_font;
   font-size: 48px;
@@ -107,16 +111,23 @@
   }
 }
 
+.SupImg {
+  width: 150px;
+  height: 37px;
+}
+
 .Supporter_img {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 iframe {
-  width: 480px;
-  height: 508px;
+  width: 80%;
+  height: 100%;
   border-radius: 12px;
 }
 
@@ -226,7 +237,7 @@ iframe {
 }
 
 .Section3_Down {
-  display: flex;
+  @include flex-center;
   padding: 80px 0;
   gap: 24px;
   margin-top: 40px;
@@ -298,13 +309,14 @@ iframe {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 567px;
+  padding: 80px;
   background-color: black;
-  &_Left {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 0 80px;
-  }
+}
+
+.Section4_Left {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 80px;
 }
 
 .Section4_text {
@@ -394,7 +406,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1280px;
+  //width: 1280px;
   height: 384px;
   background-image: url(../../Image/Vetrovievishki.png);
   background-position: center;
@@ -408,8 +420,8 @@ iframe {
   position: relative;
   z-index: 2;
   color: #fff;
-  width: 631px;
-  height: 113px;
+  // width: 631px;
+  // height: 113px;
   font-weight: 700;
   text-align: center;
   font-size: $HeadFont48px;
@@ -489,7 +501,7 @@ iframe {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 532px;
+  // height: 532px;
   padding: 0 80px 80px;
 }
 
@@ -498,6 +510,7 @@ iframe {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  gap: 20px;
 }
 
 .Section6_prewie {
@@ -509,7 +522,8 @@ iframe {
 
 .Prewie_Line {
   display: flex;
-  width: 881px;
+  flex-grow: 1;
+  // width: 881px;
   height: 1px;
   background-color: rgba(128, 128, 128, 0.546);
 }
@@ -517,7 +531,10 @@ iframe {
 .Section6_list {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  width: 100%;
+  // overflow-x: scroll;
+  flex-wrap: wrap;
 }
 
 .List1 {
@@ -525,7 +542,7 @@ iframe {
   flex-direction: column;
   justify-content: space-between;
   width: 302px;
-  height: 328px;
+  // height: 328px;
 }
 
 .List_prewie {
@@ -545,7 +562,7 @@ iframe {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 300px;
+  // height: 300px;
   padding: 0 80px;
 }
 
@@ -563,7 +580,7 @@ iframe {
 
 .Section7_Line {
   display: flex;
-  width: 1000px;
+  flex-grow: 1;
   height: 1px;
   background-color: rgba(128, 128, 128, 0.546);
 }
@@ -645,18 +662,18 @@ iframe {
 
 .Main_footer {
   display: flex;
+  justify-content: space-evenly;
   background-color: black;
   color: #f0f0f0;
   width: 100%;
-  height: 380px;
   padding: 80px;
   gap: 80px;
   margin-top: 100px;
 
   .Middle_footer {
     display: grid;
-    grid-template-columns: repeat(3, 162px);
-    grid-template-rows: repeat(5, 55px);
+    grid-template-columns: repeat(3, 10.1rem);
+    grid-template-rows: repeat(5, 3.4rem);
     .Footer_grigText {
       text-decoration: none;
       color: #f0f0f0;
@@ -674,59 +691,148 @@ iframe {
 }
 
 .Right_footer {
-    display: flex;
-    flex-direction: column;
-    width: 544px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 544px;
+  gap: 20px;
 
-    .Right_footerText {
-        font-family: $main_font;
-        font-size: 40px;
-        font-weight: 700;
-        color: white;
-    }
+  .Right_footerText {
+    font-family: $main_font;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+  }
 }
 
 .Email_form {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.Form {
+  display: flex;
+  align-items: center;
 }
 
 .Email_row {
-    width: 365px;
-    height: 64px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: none;
-    border-radius: 8px 0 0 8px;
-    padding: 20px 0 20px 20px;
-    color: white;
-    font-size: 16px;
-    outline: none;
+  width: 365px;
+  height: 64px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  padding: 20px 0 20px 20px;
+  color: white;
+  font-size: 16px;
+  outline: none;
 
-
-    &::placeholder {
-        color: #666;
-    }
+  &::placeholder {
+    color: #666;
+  }
 }
 
 .Submit_Button {
-    width: 140px;
-    height: 64px;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 0 8px 8px 0;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    &:hover {
-        transform: scale(1.2);
-        background-color: #7ad3a6;
-        border-radius: 8px;
-    }
-    &:active {
-        transform: scale(0.98);
-    }
+  @include flex-center;
+  width: 140px;
+  height: 64px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+    background-color: #7ad3a6;
+    border-radius: 8px;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+@media (max-width: 1200px) {
+  .Section2 {
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  .Section2_Left {
+    width: 100%;
+  }
+
+  .Section2_Right {
+    width: 80%;
+  }
+
+  .Section3_Down {
+    flex-direction: column;
+  }
+
+  .Section4 {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .Main_footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Middle_footer {
+    text-align: center;
+  }
+
+  .Right_footerText {
+    text-align: center;
+  }
+
+  .Section1_UP {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .UP_Right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 567px;
+    width: 100%;
+  }
+  .UP_Left {
+    width: 100%;
+  }
+
+  .List1 {
+    width: 75%;
+  }
+
+  .Events_Row {
+    flex-direction: column;
+  }
+
+  .Section7 {
+    @include flex-center;
+  }
+}
+
+.Section7_blocks {
+  width: 500px;
+}
+
+
+.loader {
+  width: 60px;
+  aspect-ratio: 5;
+  background: radial-gradient(circle closest-side, #000 90%, #0000) 0 /
+    calc(100% / 3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(4) infinite;
+}
+@keyframes l1 {
+  to {
+    clip-path: inset(0 -34% 0 0);
+  }
 }
