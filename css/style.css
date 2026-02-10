@@ -623,21 +623,21 @@ iframe {
 }
 
 .bg1 {
-  background-image: url(../../Image/GridImg1.png);
+  background-image: url(../Image/GridImg1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bg2 {
-  background-image: url(../../Image/Gridmg2.png);
+  background-image: url(../Image/GridImg2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bg3 {
-  background-image: url(../../Image/GridImg3.png);
+  background-image: url(../Image/GridImg3.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
