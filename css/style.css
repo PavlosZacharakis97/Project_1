@@ -225,6 +225,63 @@ header {
     display: flex;
   }
 }
+@media (max-width: 590px) {
+  header {
+    padding: 15px 20px;
+  }
+  .Header_preview {
+    padding: 100px 20px 40px 20px;
+    height: auto;
+    min-height: 600px;
+    background-position: center;
+  }
+  .prewie_text {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .H1_preview {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Preview_buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+    width: 100%;
+  }
+  .Preview_button {
+    width: 100%;
+    max-width: 280px;
+  }
+  .Header_Line {
+    display: none;
+  }
+  #content {
+    margin-top: 70px;
+  }
+  .Header_nav {
+    left: 20px;
+    right: 20px;
+    text-align: center;
+  }
+  .Header_nav .nav_item {
+    text-align: center;
+    width: 100%;
+  }
+}
 .Main_conteiner {
   width: 100%;
   margin: 100px auto;
@@ -1381,5 +1438,207 @@ iframe {
 @keyframes l1 {
   to {
     clip-path: inset(0 -34% 0 0);
+  }
+}
+@media (max-width: 590px) {
+  .Section1, .Section2, .Section3, .Section4, .Section5, .Section6, .Section7 {
+    padding: 10px 20px;
+  }
+  .H2_text {
+    font-size: 28px;
+    text-align: center;
+  }
+  .Section_title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .Section_title .Line {
+    width: 40px;
+  }
+  .Text_line2 {
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+  }
+  .UP_Left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .List_content {
+    margin: 20px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .UP_Right {
+    height: 300px;
+  }
+  .UP_Right iframe {
+    width: 100%;
+  }
+  .Section2_Left, .Section2_Right {
+    width: 100%;
+  }
+  .Functions_list {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+  .Functions_list::before {
+    left: 10px;
+  }
+  .Section_title2 {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Section3_Down {
+    padding: 10px 0;
+  }
+  .Section3_Down .Grid_block {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 30px 20px 30px;
+  }
+  .Section3_Down .Grid_block .Grid_text {
+    width: 100%;
+  }
+  .Section3_Down .Grid_block .Grid_text .H3_text {
+    font-size: 22px;
+  }
+  .Section4_Left {
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Section4_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .Section4_H2 {
+    font-size: 26px;
+  }
+  .Section4_h2text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+  }
+  .Section4_Grid {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+  .Section4_Right {
+    padding: 20px 0;
+  }
+  .Section4_Right canvas {
+    width: 100%;
+    height: auto;
+  }
+  .Section5_items {
+    padding: 20px 10px;
+    height: auto;
+    height: 350px;
+  }
+  .Section5_text {
+    font-size: 24px;
+  }
+  .Section5_buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Section5_buttons .Section5Left_button, .Section5_buttons .Section5Right_button {
+    width: 100%;
+    width: 250px;
+  }
+  .Section6_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .Section6_prewie {
+    font-size: 28px;
+  }
+  .List1 {
+    width: 100%;
+    text-align: center;
+  }
+  .Section7_blocks {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    gap: 20px;
+  }
+  .Block_Left .Date .Num {
+    font-size: 32px;
+  }
+  .Middle_content .Middle_Up {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Main_footer {
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .Middle_footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  .Right_footer {
+    width: 100%;
+  }
+  .Right_footer .Right_footerText {
+    font-size: 24px;
+  }
+  .Form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .Email_row {
+    width: 100%;
+    border-radius: 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .Submit_Button {
+    width: 100%;
+    border-radius: 8px;
   }
 }

@@ -160,3 +160,61 @@ header {
     display: flex;
   }
 }
+
+
+@media (max-width: 590px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .Header_preview {
+    padding: 100px 20px 40px 20px;
+    height: auto;
+    min-height: 600px;
+    background-position: center;
+  }
+
+  .prewie_text {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .H1_preview {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Preview_buttons {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .Preview_button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .Header_Line {
+    display: none;
+  }
+
+  #content {
+    margin-top: 70px;
+  }
+
+  .Header_nav {
+    left: 20px; 
+    right: 20px;
+    text-align: center;
+
+    .nav_item {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
